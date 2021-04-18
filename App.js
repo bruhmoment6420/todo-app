@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, ScrollView, View, TouchableOpacity, Alert } from 'react-native';
 import { Banner } from 'react-native-paper'
+import { StatusBar } from 'expo-status-bar'
 import Constants from 'expo-constants'
 
 import Header from './components/Header'
@@ -39,6 +40,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
+      <StatusBar style="auto"/>
       <Banner visible={visible} actions={[{ label: 'Ok', onPress: () => setVisible(false) }]}>
         Type in the input box and press 'ADD TODO' to make a new todo. Once the todo is finished, just tap on it to remove it.
       </Banner>
