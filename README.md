@@ -13,4 +13,4 @@ If for some reason you wish to run the app, there are two methods to do so
 ### Expo Go
 In order to run the app using Expo Go, follow [this](https://expo.io/@tahlial/projects/todo-app) link and just go through the instructions given there.
 ### Downloading the APK
-Go to the apps [releases]() section and download the APK file. Then just install the APK file onto your Android device.
+Go to the apps [releases](https://github.com/bruhmoment6420/todo-app/releases) section and download the APK file. Then just install the APK file onto your Android device.
