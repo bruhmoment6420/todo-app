@@ -1,13 +1,14 @@
 import React from 'react';
 import { View, TextInput, StyleSheet } from 'react-native';
 
-export default function TodoInput({ placeholder, value, onChangeText }) {
+export default function TodoInput({ placeholder, value, onChangeText, onSubmitEditing }) {
   return (
     <View style={styles.container}>
       <TextInput
         placeholder={placeholder}
         value={value}
         onChangeText={onChangeText}
+        onSubmitEditing={onSubmitEditing}
         placeholderTextColor='black'
       />
     </View>

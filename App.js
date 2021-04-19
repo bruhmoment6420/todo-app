@@ -7,7 +7,6 @@ import Constants from 'expo-constants'
 import Header from './components/Header'
 import Task from './components/Task'
 import TodoInput from './components/TodoInput'
-import AddTodo from './components/AddTodo'
 
 export default function App() {
   const [input, setInput] = useState('')
@@ -50,9 +49,7 @@ export default function App() {
           placeholder='Enter Todos...'
           value={input}
           onChangeText={(val) => setInput(val)}
-        />
-        <AddTodo
-          onPress={newTodo}
+          onSubmitEditing={newTodo}
         />
       </View>
       <View style={styles.todoContainer}>
@@ -82,9 +79,7 @@ const styles = StyleSheet.create({
     marginTop: 12
   },
   inputs: {
-    justifyContent: 'flex-start',
-    flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
 
